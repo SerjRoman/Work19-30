@@ -1,0 +1,39 @@
+.main{
+    width: 100%;
+    height: 100%;
+}
+.ball{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+.img-ball{
+    width: 70px;
+    height: 70px;
+}
+.soccer{
+    position: relative;
+}
+.gates{
+
+    width: 550px;
+    height: 400px;
+}
+.count{
+    text-align: center;
+    color: white;
+    font-size: medium;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.visible{
+    display: flex;
+    width: 600px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgreen;
+    border: 10px;
+    border-radius: 15px;
+}

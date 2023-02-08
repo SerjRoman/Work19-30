@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut earum consectetur sunt non dicta similique, dolore alias possimus eveniet, sed, id iure placeat vel voluptas rem cupiditate dolor quasi? Neque.
+    </div>
+    <script>
+        let contentElem = document.querySelector('.content');
+        contentElem.style.color = 'red';
+        console.log(contentElem);
+        let pElem = document.createElement("p");
+        console.log(pElem);
+        pElem.textContent = "Pahok";
+        document.body.append(pElem)
+    </script>
+</body>
+</html>
