@@ -1,0 +1,21 @@
+.content{
+    border: 2px black ;
+    border-color: aquamarine;
+    background-color: blue;
+    margin: 0%;
+    padding: 0%;    
+}
+.window{
+    border: 3px red;
+    border-radius: 2px;
+    background-color: blueviolet;
+}
+.block-number{
+    background-color: green;
+    border-radius: 1px;
+    width: 70px;
+    height: 70px;
+}
+
+
+

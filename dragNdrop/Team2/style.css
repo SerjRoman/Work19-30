@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    background: rgb(251,78,63);
+    background: radial-gradient(circle, rgba(251,78,63,1) 0%, rgba(70,252,106,1) 100%);
+}
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 40vh;
+    background: rgb(251, 78, 63);
+    background: radial-gradient(circle, rgba(251, 78, 63, 1) 0%, rgba(70, 252, 106, 1) 100%);
+    border: 3px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+}
+p{
+    text-align: center;
+    padding: 5px;
+}
+.selected {
+    background-color: aqua;
+}
+.drop{
+    background-color: orange;
+}
+.autor:hover{
+    content: 'Перемещать елемент';
+}
