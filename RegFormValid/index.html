@@ -5,25 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="content">
-        <form class="reg" action="#">
-            <div class="block-input">
-                <p class="p-input-reg">Enter your user name</p>
-                <input class="input" type="text" id="username" placeholder="username">
-                <p class="p-input-reg">Enter your email</p>
-                <input class="input" type="text" id="email" placeholder="email">
-                <p class="p-input-reg">Enter your password(not 1234567890)</p>
-                <input class="input" type="text" id="password" placeholder="password"> 
-            </div>
-            <br>
-            <div class="block-button-reg"> 
-                <input type="submit" class="button-reg" value="Registration">
-             </div>
-        </form>  
+    <div class="block-content">
+        <div class="block-reg">
+            <form action="" id="reg">
+                <p>Пройдіть реєстрацію, щоб почати</p>
+                <div class="block-input-reg">
+                    <label for="usename" class="label-input">Ім'я користувача:</label>
+                    <input class="input" id="username" type="text">
+    
+                    <label for="email" class="label-input">Електронна пошта:</label>
+                    <input class="input" id="email" type="text">
+    
+                    <label for="password" class="label-input">Пароль:</label>
+                    <input class="input" id="password" type="password">
+
+                    <label for="confirmPassword" class="label-input">Підтвердження Пароля:</label>
+                    <input class="input" id="confirmPassword" type="password">
+                </div>
+                <div class="block-button-reg">
+                    <input type="submit" value="Реєстрація" class="button-reg">
+                </div>
+                <div class="block-help-button">
+                    <div class="item-help">
+                        <button id = "buttonReg" >Вже є обліковий запис?</button>
+                    </div>
+                    
+                    
+                </div>
+            </form>
+            <form action="" id="auth" hidden>
+                <p>З поверненням на наш сайт</p>
+                <div class="block-input-reg">
+                   
+                    <label for="email" class="label-input">Електронна пошта:</label>
+                    <input class="input" id="email" type="text">
+    
+                    <label for="password" class="label-input">Пароль:</label>
+                    <input class="input" id="password" type="password">
+
+                </div>
+                <div class="block-button-reg">
+                    <input type="submit" value="Авторизуватися" class="button-reg">
+                </div>
+                <div class="block-help-button">
+                    <div class="item-help">
+                        <button>Забули Пароль</button>
+                    </div>
+                    <div class="item-help">
+                        <button id = "buttonAuth">Немає облікового запису?</button>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-

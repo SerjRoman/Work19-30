@@ -1,5 +1,5 @@
 // 
-const form = document.querySelector(".reg");
+const form = document.querySelector("#reg");
 // 
 const bannedWords = [
     '%',
@@ -21,19 +21,18 @@ form.addEventListener("submit", (event)=>{
     // 
     let result = true;
     // 
-    for (let input of inputs){
-        // 
-        if (validation(input) == false){
-            result = false;
-        }
-    }
-    // 
-    if (result == true ){
-        form.submit()
+    // for (let input of inputs){
+    //     // 
+    //     if (validation(input) == false){
+    //         result = false;
+    //     }
+    // }
+    // // 
+    // if (result == true ){
+    //     form.submit()
 }
 
-
-})
+)
 // 
 function createError(text, elem){
     // 
@@ -90,3 +89,14 @@ function validation(input) {
     // 
     return true
 }
+
+buttonAuth.addEventListener("click", (event) =>{
+    console.log("auth");
+    auth.hidden = true;
+    reg.hidden = false;
+})
+buttonReg.addEventListener("click", (event) =>{
+    console.log("reg");
+    auth.hidden = false;
+    reg.hidden = true;
+})
