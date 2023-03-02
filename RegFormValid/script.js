@@ -20,18 +20,18 @@ form.addEventListener("submit", (event)=>{
     }
     // 
     let result = true;
+    
+    for (let input of inputs){
+        // 
+        if (validation(input) == false){
+            result = false;
+        }
+    }
     // 
-    // for (let input of inputs){
-    //     // 
-    //     if (validation(input) == false){
-    //         result = false;
-    //     }
-    // }
-    // // 
-    // if (result == true ){
-    //     form.submit()
+    if (result == true ){
+        form.submit()
 }
-
+}
 )
 // 
 function createError(text, elem){
