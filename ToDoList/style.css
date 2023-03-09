@@ -1,0 +1,150 @@
+/* Artem */
+/* Стилизируем окно */
+*{
+    /* Задаем пространство */
+    margin: 0;
+    /* Задаем отступы */
+    padding: 0;
+    /* Задаем свойство, которое позволяет элементу учитывать ширину и высоту элемента */
+    box-sizing: border-box;
+/* Стилизируем тело*/
+}
+body, html{
+    /* Ширина */
+    width: 100%;
+    /* Высота */
+    height: 100%;
+}
+/* Задаем главную страницу*/
+.main-content{
+    /* Ширина */
+    width: 100%;
+    /*Высота */
+    height: 100%;
+    /*Задем градиент для фона */
+    background: linear-gradient(153deg, rgba(34, 195, 145, 1) 0%, rgba(224, 228, 61, 1) 50%, rgba(253, 45, 238, 1) 100%); 
+    /*Задаем тип дисплея */
+    display: flex;
+    /*Задаем выравнивание по центру */
+    align-items: center;
+    /*Задаем выранивание по центру для контента */
+    justify-content: center;
+}
+/* Стилизируем блок с заданиями*/
+.block-tasks{
+    /*Задаем задний фон */
+    background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    /*Задаем ширину */ 
+    width: 500px;
+    /*Задаем высоту автоматом */
+    height: auto;
+    /*Задаем тип дисплея */
+    display: flex;
+    /* Задаем способ размещения*/
+    flex-direction: column;
+    /* Задаем выраивание по центру для джитифай контент*/
+    justify-content: center;
+    /*Задаем границы */
+    border: 2px solid black;
+    /* Задаем радиус границ*/
+    border-radius: 5px;
+}
+/* Стилизируем список заданий*/
+.list-tasks li{
+    /*Задаем фон */
+    background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    /*Задаем отступы */ 
+    padding: 20px;
+    /*Задаем границы */
+    border: 2px solid black;
+    /*Задаем радиус границ */
+    border-radius: 5px;
+    /* Задаем ширину*/
+    width: 80%;
+    /*Задаем внешние отступы */
+    margin: 20px auto;
+    /* Задаем тип позиционирования релетив*/
+    position: relative;
+}
+/* Стилизируем создание заданий*/
+.create-task{
+    /*Задаем ширину */
+    width: 50%;
+    /*Задаем высоту */
+    height: 50px;
+    /* Задаем внешние отступы*/
+    margin: 20px auto;
+    /*Задаем границы */
+    border: 2px solid black;
+    /* Задаем радиус границ*/
+    border-radius: 5px;
+}
+/*Стилизируем список заданий */
+.list-tasks {
+    /* Задаем тип стиля списка нан*/
+    list-style-type: none;    
+}
+/* Artem */
+
+
+/* Стилизируем обьєкт task-button */
+.task-button{
+    /* Задаем position чтоб обьект бил нерушимим */
+    position: absolute;
+    /* Задаем right */
+    right: 5px;
+    /* Задаем top */
+    top: 5px;
+    
+}
+/* Стилизируем обьєкт modal-window */
+.button-delete{
+    /* Задаем cursor */
+    cursor: pointer;
+    /* убераем background */
+    background: none;
+    /* убераем border */
+    border: none;
+}
+/* Стилизируем обьєкт modal-window */
+.modal-window{
+    /* Задаем display */
+    display: none;
+    /* Задаем position для того что его можна било разширять */
+    position: fixed;
+    /* Задаем висоту */
+    width: 300px;
+    /* Задаем ширину */
+    height: 300px;
+    /* Задаем background-color */
+    background-color: white;
+    /* Задаем border */
+    border: 2px black solid;
+    /* Задаем border-radius */
+    border-radius: 5px;
+    /* Задаем z-index чтоб он бил поверх остальниз елементов */
+    z-index: 9000;
+    /* Ставим обьект в центр */
+    top: 50%;
+    left: 50%;
+    /* Задаем transform и идменяем его положение */
+    transform: translate(-50%,-50%);
+}
+/* Стилизируем обьєкт cover */
+.cover{
+    /* Задаем position absolute чтобь поставить его в верхний левий угол*/
+    position: absolute;
+    /* Задаем висоту */
+    width: 100%;
+    /* Задаем ширину*/
+    height: 100%;
+    /* Задаем background-color для фона*/
+    background-color: rgba(0, 0, 0, 0.458);
+    /* Задаем z-index */
+    z-index: 8999;
+    /* Задаем left и ставим его на x 0*/
+    left: 0;
+    /* Задаем top и ставим его на y 0*/
+    top: 0;
+}
+/*  */

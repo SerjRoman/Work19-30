@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- подключаем js -->
+    <script src="scripts.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- подключаем стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- основной div -->
+    <div class="main-content">
+        <!--  -->
+        <div class="block-tasks">
+            <!--список задач -->
+            <ul class="list-tasks">
+                <!-- елементы списка -->
+                <li>
+                    <!-- div для текста задачи -->
+                    <div class="task-text">
+                        <!-- заголовок -->
+                        <h2>Задача 1</h2>
+                        <!-- текст задачи -->
+                        <p>Сделать эту страницу рабочей</p>
+                        <!--  -->
+                    </div>
+                    <!-- div для кнопки -->
+                    <div class="task-button">
+                        <!-- кнопка удаления задачи -->
+                        <button class="button-delete">&Cross;</button>
+                    </div>
+                </li>
+                <li>
+                    <!-- div для текста задачи -->
+                    <div class="task-text">
+                        <!-- заголовок -->
+                        <h2>Задача 2</h2>
+                        <!-- текст задачи -->
+                        <p>Сделать эту страницу рабочей</p>
+                    </div>
+                    <!-- div для кнопки -->
+                    <div class="task-button">
+                        <!-- кнопка удаления задачи -->
+                        <button class="button-delete">&Cross;</button>
+                    </div>
+                </li>
+            </ul>
+            <!-- кнопка для создания задачи -->
+            <button class="create-task">Добавить задачку</button>
+        </div>
+    </div>
+    <!-- div модального окна -->
+    <div class="modal-window">
+        <!-- блок для ввода текста -->
+        <div class="block-text">
+            <!-- текст для input с названием задачи-->
+            <label for="nameTask">Введіть ім'я завдання</label>
+            <!-- запрашиваем название задачи у пользователя -->
+            <input type="text" maxlength="25" id="nameTask">
+            <!-- текст для textarea с описанием задачи -->
+            <label for="descriptionTask">Введть опис завдання</label>
+            <!-- задаем поле для ввода -->
+            <textarea  id="descriptionTask" cols="20" rows="5"></textarea>
+            
+        </div>
+        <!-- div для кнопки -->
+        <div class="buttonCreate">
+            <!-- кнопка для создания задачи -->
+            <button>Створить задачу</button>
+        </div>
+
+    </div>
+</body>
+</html>
